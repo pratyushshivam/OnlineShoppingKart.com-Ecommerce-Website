@@ -1,0 +1,295 @@
+{% extends 'shop/basic.html' %}
+
+
+
+{% block title%} HOME {% endblock %}
+
+
+
+{% block css%}
+<link rel="stylesheet" href="../../static/shop/style.css">
+<link rel="stylesheet" href="../../static/shop/another.css">
+<style>
+    .card .content a {
+        /* display: flex; */
+        width: fit-content;
+        margin-left: -294px;
+        margin-top: 20px;
+    }
+</style>
+
+{% endblock %}
+
+
+
+
+
+{% block body%}
+
+<div class="imagehaha">
+    <img src="https://images.pexels.com/photos/3088384/pexels-photo-3088384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="">
+</div>
+<!-- 
+ <ul> 
+     <li><a href="#">Home</a> </li>
+     <li><a href="#">About</a> </li>
+     <li><a href="#">Contact</a> </li>
+     <li><a href="#">Help</a> </li>
+     <li><a href="#">Settings</a> </li>
+ </ul> -->
+<section class="first">
+    <div class="salediv">
+        <h1 class="sale">&nbsp; {{product.1.category}} &nbsp; </h1>
+    </div>
+
+    <div class="sidenav">
+        <li><a href="#"> Account</a></li>
+        <li><a href="#"> User</a></li>
+        <li><a href="#"> Purchases</a></li>
+        <li><a href="#"> Cancels</a></li>
+        <li><a id="hahaha" href="#"> Discount</a></li>
+
+    </div>
+
+
+    <div class="swiper-container" ">
+     <div class=" swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>{{product.0.product_name}}</h3>
+                </div>
+                <div class="content">
+                    <p>{{product.0.desc}}</p>
+                    <img style="margin-right: 0px;width: 63px;margin-left: 228px;" src="/media/{{product.0.image}}"
+                        alt="">
+
+                    <a id="pr{{product.0.id}}" class="cart" href="#">Add to Cart!</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>{{product.1.product_name}}</h3>
+                </div>
+                <div class="content">
+                    <p>{{product.1.desc}}</p>
+                    <img style="margin-right: 0px;width: 49px;margin-left: 228px;" src="/media/{{product.1.image}}"
+                        alt="">
+                    <a id="pr{{product.1.id}}" class="cart" href="#">Add to Cart!</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>{{product.2.product_name}}</h3>
+                </div>
+                <div class="content">
+                    <p>{{product.2.desc}}</p>
+                    <img style="margin-right: 0px;width: 65px;margin-left: 221px;" src="/media/{{product.2.image}}"
+                        alt="">
+                    <a id="pr{{product.2.id}}" class="cart" href="#">Add to Cart!</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>{{product.3.product_name}}</h3>
+                </div>
+                <div class="content">
+                    <p>{{product.3.desc}}</p>
+                    <img style="margin-right: 0px;width: 82px;margin-left: 203px;" src="/media/{{product.3.image}}"
+                        alt="">
+                    <a id="pr{{product.3.id}}" class="cart" href="#">Add to Cart!</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>{{product.4.product_name}}</h3>
+                </div>
+                <div class="content">
+                    <p>{{product.4.desc}}</p>
+                    <img style="margin-right: 0px;width: 69px;margin-left: 203px;" src="/media/{{product.4.image}}"
+                        alt="">
+                    <a id="pr{{product.4.id}}" class="cart" href="#">Add to Cart!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="para">
+        <p class="parag">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+            Nesciunt consectetur autem alias fuga reprehenderit dolores!
+            Minima, totam. Quod, fuga? Quam cum consequatur laborum ipsum,
+            non modi enim? Delectus, eligendi? Aut rem et eum nisi ratione ducimus
+            esse quo corporis reiciendis placeat architecto fugit aliquid labore v
+            oluptate vero officia minus totam quidem sint distinctio, consectetur
+            in est!</p>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- 2nd one -->
+
+
+
+<section class="second">
+    <div class="salediv">
+        <h1 class="sale">&nbsp; {{product.0.category}} &nbsp; </h1>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>{{product.0.product_name}}</h3>
+                    </div>
+                    <div class="content">
+                        <p>{{product.0.desc}}</p>
+                        <img style="margin-right: 0px;width: 63px;margin-left: 228px;" src="/media/{{product.0.image}}"
+                            alt="">
+                        <a class="cart" href="#">Add to Cart!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>{{product.1.product_name}}</h3>
+                    </div>
+                    <div class="content">
+                        <p>{{product.1.desc}}</p>
+                        <img style="margin-right: 0px;width: 49px;margin-left: 228px;" src="/media/{{product.1.image}}"
+                            alt="">
+                        <a class="cart" href="#">Add to Cart!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>{{product.2.product_name}}</h3>
+                    </div>
+                    <div class="content">
+                        <p>{{product.2.desc}}</p>
+                        <img style="margin-right: 0px;width: 65px;margin-left: 221px;" src="/media/{{product.2.image}}"
+                            alt="">
+                        <a class="cart" href="#">Add to Cart!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>{{product.3.product_name}}</h3>
+                    </div>
+                    <div class="content">
+                        <p>{{product.3.desc}}</p>
+                        <img style="margin-right: 0px;width: 82px;margin-left: 203px;" src="/media/{{product.3.image}}"
+                            alt="">
+                        <a class="cart" href="#">Add to Cart!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>{{product.4.product_name}}</h3>
+                    </div>
+                    <div class="content">
+                        <p>{{product.4.desc}}</p>
+                        <img style="margin-right: 0px;width: 69px;margin-left: 203px;" src="/media/{{product.4.image}}"
+                            alt="">
+                        <a class="cart" href="#">Add to Cart!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="para">
+        <p class="parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nesciunt consectetur autem alias fuga reprehenderit dolores!
+            Minima, totam. Quod, fuga? Quam cum consequatur laborum ipsum,
+            non modi enim? Delectus, eligendi? Aut rem et eum nisi ratione ducimus
+            esse quo corporis reiciendis placeat architecto fugit aliquid labore v
+            oluptate vero officia minus totam quidem sint distinctio, consectetur
+            in est!</p>
+    </div>
+
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 100,
+            stretch: 930,
+            depth: 1000,
+            modifier: 1.5,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+{% endblock %}
+
+
+{% block  js%}
+
+<script>
+    console.log('working');
+    
+    if (localStorage.getItem('cart') == null) {
+        var cart = {};
+    }
+    else {
+        cart = JSON.parse(localStorage.getItem('cart'));
+        document.getElementById('cart').innerHTML=Object.keys(cart).length; // cart object ka jitna length h wo assign ho jayega 
+    }
+    $('.cart').click(function () {
+        console.log('clicked');
+        var idstr = this.id.toString();
+        console.log(idstr);
+        if (cart[idstr] != undefined) {
+            cart[idstr] = cart[idstr] + 1;
+        }
+        else {
+            cart[idstr] = 1;
+            
+        }
+        console.log(cart);
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+    });
+</script>
+
+
+
+
+{% endblock %}
+
+</html>
+
+
+<!-- width: 140px;
+    margin-bottom: -68px;
+    margin-left: 218px;
+} -->

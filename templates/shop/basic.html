@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> {% block title%}   {% endblock %}  </title>
+     <link rel="stylesheet" href="../../static/shop/style.css">
+     <link rel="stylesheet" href="../../static/shop/another.css">
+    <style> {% block css%}   {% endblock %}  </style>
+    <style>
+    
+
+.card .content a {
+    /* display: flex; */
+    width: fit-content;
+    margin-left: -294px;
+    margin-top: 20px;
+}
+.content img{
+      margin-bottom: -24px;
+}
+</style>
+  </head>
+  <body>
+      <ul> 
+        <li><a href="/shop" title="Take me to Home">Home</a> </li>
+        <li><a href="/shop/about" title="Get to know about us">About Us</a> </li>
+        <li><a href="/shop/tracker" title="Track your Shipmemts">Tracker</a> </li>
+        <li><a href="/shop/contact" title="Communicate with Us!">Contact Us</a> </li>
+        <li><a id="select" href="#" data-toggle="popover" data-content="Some content inside the popover" title="Cart Items"  >Cart(  <span id="cart">0 </span>  )</a> </li>
+    </ul>
+     {% block  body%}   {% endblock %} 
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  
+ 
+    {% block  js%}   {% endblock %}
+  </body>
+</html>
